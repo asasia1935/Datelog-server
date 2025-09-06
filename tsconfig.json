@@ -7,12 +7,14 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "CommonJS",
+    "module": "NodeNext",
+    "lib": ["ES2020"],
     "target": "ES2020",
-    "moduleResolution": "Node",
+    "moduleResolution": "NodeNext",
     "rootDir": "src",
     "outDir": "dist",
     "esModuleInterop": true,
+    "types": ["node"],
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
@@ -24,6 +26,7 @@
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
+    "forceConsistentCasingInFileNames": true,
 
     // Style Options
     // "noImplicitReturns": true,
