@@ -1,7 +1,7 @@
-import { ENV } from './config/env';
-import { connectDB } from './config/db';
+import { ENV } from './config/env.js';
+import { connectDB } from './config/db.js';
 // 이 순간 Node.js/ts-node가 app.ts 파일을 읽고 실행
-import app from './app';
+import app from './app.js';
 
 async function main() {
   try {

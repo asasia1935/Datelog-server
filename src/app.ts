@@ -1,9 +1,9 @@
 import express from 'express';
 import cors from 'cors'; // CORS 허용을 위한 미들웨어 (프론트엔드 도메인에서 호출 허용)
 import morgan from 'morgan'; // express 전용 HTTP 요청 로거 미들웨어
-import healthRoutes from './routes/health.routes';
-import { errorHandler } from './middlewares/errorHandler';
-2
+import healthRoutes from './routes/health.routes.js';
+import { errorHandler } from './middlewares/errorHandler.js';
+
 const app = express();
 
 /* ----------------------- 공통 미들웨어 ----------------------- */

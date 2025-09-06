@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import { ENV } from './env';
+import { ENV } from './env.js';
 
 // DB와 연결하는 함수
 export async function connectDB() {
